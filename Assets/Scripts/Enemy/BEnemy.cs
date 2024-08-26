@@ -31,9 +31,9 @@ public class BEnemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            IDamage id = other.GetComponent<IDamage>(); //ºÎµúÈù »õ±â ÄÄÆ÷³ÍÆ® Idamage ÀÎÅÍÆäÀÌ½º¸¦ ¹Ş¾Æ¿Â´Ù
-            if (id != null) //Ã£¾ÆÁ³À»¶§ 
-                id.OnDamage(damage); //µ¥¹ÌÁö ÀÎÅÍÆäÀÌ½º ½ÇÇà
+            IDamage id = other.GetComponent<IDamage>(); //ë¶€ë”ªíŒ ì»´í¬ë„ŒíŠ¸ Idamage ì¸í„°í˜ì´ìŠ¤ë¥¼ ë°›ì•„ì˜¨ë‹¤
+            if (id != null) //ì°¾ì•„ì¡Œì„ë•Œ 
+                id.OnDamage(damage); //ë°ë¯¸ì§€ ì¸í„°í˜ì´ìŠ¤ ì‹¤í–‰
         }
     }
 }
